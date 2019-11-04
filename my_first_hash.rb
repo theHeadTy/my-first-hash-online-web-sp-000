@@ -1,6 +1,6 @@
 def my_hash
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-
+  Hash.new
   
 end
 
@@ -21,7 +21,8 @@ def retrieval
                  }
 
   # Look up the value of the "oil paintings" key in the shipping_manifest hash below
-
+  
+  shipping_manifest.values_at('oil paintings')
 end
 
 def adding
@@ -30,14 +31,10 @@ def adding
                   "porcelain vases" => 2, 
                   "oil paintings" => 3
                  }
-  # add 2 muskets to the shipping_manifest hash below
-
-
-
-  # add 4 gun powder to the shipping_manifest hash below
-
-
-
-  # return the shipping_manifest hash below
+  
+  shipping_manifest.merge({
+    'gun powder' => 2,
+    
+  })
 
 end
