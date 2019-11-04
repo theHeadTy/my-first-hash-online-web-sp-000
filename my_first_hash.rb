@@ -30,7 +30,7 @@ def retrieval
 
   # Look up the value of the "oil paintings" key in the shipping_manifest hash below
   
-  shipping_manifest.values_at('oil paintings').join.to_i
+  shipping_manifest.values_at('oil paintings')
 
 end
 
