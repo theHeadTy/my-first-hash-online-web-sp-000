@@ -33,7 +33,7 @@ def adding
                  }
   
   shipping_manifest.merge({
-    'gun powder' => 2,
+    'gun powder' => 4,
     
   })
 
